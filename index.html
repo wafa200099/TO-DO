@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>TO DO APP</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>TO DO APP</h1>
+    <div class="form">
+      <label for="input1">Task:</label>
+      <input type="text" id="input1" placeholder="Add your task " />
+      <label for="input2">assignee:</label>
+      <input type="text" id="input2" placeholder="Add assignee" />
+      <input type="submit" class="add" value="Add Task" />
+      <input type="search" id="search" placeholder="Search for a task" onkeyup="searchFor()">
+    </div>
+    <div class="tasks"> <!-- add tasks here --> </div>
+    <div class="overlay" id="overlay" hidden>
+      <div class="confirm-box">
+        <div>
+          <p>Are you sure delete this task?</p>
+        </div>
+        <div class="confirmBtns">
+          <button id="cancelDeleting" style="margin-right: 0.5rem">
+            Cancel
+          </button>
+          <button id="confirmDeleting">Delete</button>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+    </div>
+    <div id="searchFooter"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
